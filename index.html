@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 420px;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 14px 26px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+      margin: 6px;
+    }
+
+    button:hover {
+      background: #e63e5c;
+      transform: scale(1.05);
+    }
+
+    .section {
+      margin-top: 25px;
+      display: none;
+      color: #444;
+      line-height: 1.7;
+      text-align: left;
+      white-space: pre-line;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Happy Valentine’s Dayyyyyy Keerthanaaaaaa (mwah)❤️</h1>
+
+    <button onclick="showLetter()">Open My Letter 💌</button>
+    <button onclick="showPlan()">Our Valentine’s Day Plan ✨</button>
+    <button onclick="showQuestion()">One Last Thing 💖</button>
+
+    <div class="section" id="letter">
+<center>
+My sweetheart,
+Eveything about you is soo special to me, and sometimes I wish you could see youself through my eyes. You'd see an ocean of stunningness and wonders you never thought could exist. You are the prettiest, most adoreable and not to mention the coolest girlfriend anyone could wish for and i am soo gratefull to have you :)).
+I love you my darling, I love you the most. 
+MWAHHHH MY CUTIEE PUMPKIN PIE <3
+Happy Valentine’s Day Kichuu:)💘
+    </div>
+
+    <div class="section" id="plan">
+Our plan 💕
+We will have exams in 3 days so no plan only study :((
+
+    </div>
+
+    <div class="section center" id="question">
+<h2>Will you be my Valentine? 💖</h2>
+<button class="yes" onclick="sayYes()">Yes 💘</button>
+
+<p id="answer" style="display:none; margin-top:15px;">
+Yayayyayayyaya❤️  
+You just made me the happiest person (for like the millionth time) :)))
+</p>
+    </div>
+  </div>
+
+  <script>
+    function showLetter() {
+      document.getElementById("letter").style.display = "block";
+    }
+
+    function showPlan() {
+      document.getElementById("plan").style.display = "block";
+    }
+
+    function showQuestion() {
+      document.getElementById("question").style.display = "block";
+    }
+
+    function sayYes() {
+      document.getElementById("answer").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
